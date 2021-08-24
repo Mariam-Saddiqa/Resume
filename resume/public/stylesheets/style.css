@@ -1,51 +1,130 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
-}
 .navbar-brand{
-  font-size: 32px;
+  margin-left: 10px;
 }
-.nav-link{
-  position: relative;
+.navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 18px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 2em;
+      margin-right : 2em;
+  }
+}
+.navbar-nav li a:hover {
+  color: black !important;
+  background-color: #fff !important;
+  border: 2px solid orange;
+  border-radius: 2px;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.jumbotron{
+  text-align: center;
+  background-color: rebeccapurple;
+}
+.words {
+  color: #f4d03f;
+  font-size: 0;
+  line-height: 1.5;
+}
+.words span {
+  font-size: 4rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
 }
 
- .nav-link:before{
-  content:'';
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  width: 0%;
-  border-bottom: 3px solid;
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(255, 251, 5, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
 
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
 }
-.navbar-nav .nav-link:hover:before{
-  content:'';
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  width: 100%;
-  border-bottom: 3px solid;
-  transition: .6s;
 
+.words span:nth-child(3) {
+  animation-delay: 1s;
 }
-.line{
-  position: relative;
-}
-.line:before{
-  content:'';
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  width: 50%;
-  border-bottom: 3px solid;
 
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
 }
-.header_img{
-  width: 100%;
-  height: 100vh;
-  background-image:url('../images/woman.jpg');
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
 }
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+}
+.lead{
+  color: white;
+}
+/* .lead {
+  width: 65ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  100% {
+    border-color: transparent
+  }
+} */
+#about{
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.abImgout{
+
+  animation-name: mymove;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease; 
+}
+
+  @keyframes mymove {
+    from {right: -200px;}
+    to {right: 20px;}
+  }
+  #services{
+    margin-top: 5%;
+  }
+
+
+
+
+
