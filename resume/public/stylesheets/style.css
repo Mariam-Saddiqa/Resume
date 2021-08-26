@@ -1,7 +1,7 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-.navbar-brand{
+.navbar-brand {
   margin-left: 10px;
 }
 .navbar {
@@ -15,24 +15,22 @@ html{
   border-radius: 0;
   font-family: Montserrat, sans-serif;
 }
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .navbar li {
-      margin-left : 2em;
-      margin-right : 2em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 .navbar-nav li a:hover {
   color: black !important;
   background-color: #fff !important;
- 
 }
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: #fff !important;
 }
-.jumbotron{
+.jumbotron {
   text-align: center;
-
 }
 .words {
   color: #f4d03f;
@@ -82,69 +80,119 @@ html{
   animation-delay: 3s;
 }
 
-.lead{
+.lead {
   color: white;
 }
 
-#about{
+#about {
   letter-spacing: 2px;
   text-align: center;
   align-content: center;
-
 }
-#skills{
-  
+#skills {
   align-content: center;
-  margin-top: 5%;
-  justify-content: center;
-  
+  margin-top: 6%;
 }
 
-#contact{
+#contact {
   margin-top: 5%;
   background-color: rgb(234, 235, 236);
 }
-.abImgout{
-
+.abImgout {
   animation-name: mymove;
   animation-duration: 4s;
   animation-iteration-count: 2;
-  animation-timing-function: ease; 
+  animation-timing-function: ease;
 }
 
-  @keyframes mymove {
-    from {right: -200px;}
-    to {right: 20px;}
+@keyframes mymove {
+  from {
+    right: -200px;
   }
-  #mywork{
-    margin-top: 5%;
+  to {
+    right: 20px;
   }
-  #contact{
-    margin-top: 6%;
-  }
-  
-  .jumbotron{
+}
+#mywork {
+  margin-top: 6%;
+}
+#contact {
+  margin-top: 6%;
+}
 
-    font-family: "Archivo Black", sans-serif;
-    background: #f4d03f;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-weight: 1000;
-    
-    
-  }
-.html{
+.jumbotron {
+  font-family: "Archivo Black", sans-serif;
+  background: #f4d03f;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+}
+.html {
   background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
 }
-.css{
+.css {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
-.java{
- background-image: linear-gradient(to right, #8360c3, #2ebf91);
+.java {
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
 }
-.node{
-  background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+.node {
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
 }
+#mywork {
+  justify-content: center;
+  align-items: center;
+}
+ .projects{
+  position: relative;
+  max-width: 350px;
+  height: 300px;
+  background: #fff;
+  margin: 30px 30px;
+  
+  
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 00.5s ease-in-out;
+}
+.projects:hover{
+
+  height: 420px;
+
+}
+.imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 40px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top{
+  max-width: 100%;
+  border-radius: 4px;
+}
+.bodyWork{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+#mywork .projects:hover .bodyWork{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+} 
+
