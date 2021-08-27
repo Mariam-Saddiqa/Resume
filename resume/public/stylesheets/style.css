@@ -211,7 +211,7 @@ html {
  */
  .projects {
   position: relative;
-  width: 50%;
+  /* width: 50%; */
 }
 .imgBx {
   opacity: 1;
