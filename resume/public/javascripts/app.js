@@ -14,12 +14,12 @@ function addComments(e) {
     comment: comment.value,
   };
 
-  fetch("http://localhost:3000/users", {
+  fetch('http://localhost:3000/users', {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
       "content-type": "application/json; charset=UTF-8",
-    },
+    }
   }).then((res) => {
     alert("Saved");
   });
