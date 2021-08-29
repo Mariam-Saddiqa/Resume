@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 
 html {
@@ -46,7 +42,7 @@ html {
 }
 
 .words span {
-  font-size: 5rem;
+  font-size: 4rem;
   display: inline-block;
   animation: move 3s ease-in-out infinite;
 }
@@ -96,6 +92,9 @@ html {
   text-align: center;
   align-content: center;
 }
+.whoami{
+  margin-top: 6%;
+}
 #skills {
   align-content: center;
   margin-top: 6%;
@@ -139,6 +138,7 @@ html {
 }
 .html {
   background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  
 }
 .css {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
@@ -153,62 +153,7 @@ html {
     rgba(192, 229, 246, 1) 64%
   );
 }
-/* #mywork {
-  position: relative;
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-}
- .projects{
-  position: relative;
-  max-width: 300px;
-  height: 215px;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  background: #fff;
-  transition: 0.5s ease-in-out;
-}
-#mywork .projects:hover{
 
-  height: 420px;
-
-}
-.imgBx{
-  position: relative;
-  width: 260px;
-  height: 260px;
-  top: -60px;
-  left: 6px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
- .card-img-top{
-  border-radius: 4px;
-}
-.bodyWork{
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  background-color:lightcoral;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-#mywork .projects:hover .bodyWork{
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
-} 
- */
  .projects {
   position: relative;
   /* width: 50%; */
@@ -217,9 +162,13 @@ html {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  
   transition: .5s ease;
   backface-visibility: hidden;
+}
+.imgBx img{
+  height:auto;
+  width:100%
 }
 
 .bodyWork {
@@ -245,3 +194,96 @@ html {
   font-size: 20px;
   padding: 16px 32px;
 }
+
+.abImgout{
+  margin-bottom: 10px;
+}
+.social a{
+  margin: 8px;
+  top: 10px;
+}
+
+
+/*<=============RESPONSIVE=============>*/
+/* if the viewport is equal to 340px or less than that */ 
+/* @media only screen and (max-width: 340px){
+  .navbar,
+  .navbar .navbar-brand,
+  .container
+  {
+      padding: 2%;
+      margin: 0%;
+  }
+
+  .site-main .site-banner .site-title h1{
+      font-size: 41px;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox input{
+      width: 15rem    !important;
+  }
+
+  .site-main > .services-area .services{
+      width: 13rem;
+  }
+
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+/* @media only screen and (max-width: 792px){
+  .site-main .about-area .about-title h2 > span{
+      font-size: 31px;
+      letter-spacing: 10px;
+  }
+
+  .site-main .brand-area .experience-area .years-area{
+      padding-left: 1%;
+      width: 49%;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel{
+      margin-left: 30%;
+      width: 80%;   
+  }
+
+  .site-main .brand-area .experience-area .call-area{
+      padding-left: 3%;
+  }
+
+  .site-main .project-area .button-group button{
+      font: normal 500 18px/40px var(--roboto);
+  }
+
+  .site-main .about-area .about-title p{
+      padding: 0%;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox input{
+      width: 20rem;
+      margin: 5%;
+  }
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+/* @media only screen and (max-width: 1910px){
+  .header_area .main-menu .navbar{
+      padding: 1rem;
+  }
+
+  .container{
+      max-width: 90%;
+  }
+
+  .site-main .brand-area,
+  .site-main .services-area .services-title,
+  .site-main .about-area{
+      padding: 3% 4%;
+  }
+
+
+} *
+
+
