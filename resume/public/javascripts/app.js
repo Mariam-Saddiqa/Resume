@@ -1,4 +1,4 @@
-const Name = document.querySelector("#name");
+const fname = document.querySelector("#name");
 const email = document.querySelector("#email");
 const comment = document.querySelector("#comments");
 const button = document.querySelector(".send");
@@ -9,7 +9,7 @@ function addComments(e) {
   e.preventDefault();
 
   let data = {
-    name: Name.value,
+    name: fname.value,
     email: email.value,
     comment: comment.value,
   };
