@@ -1,7 +1,7 @@
-const fullname = document.querySelector("#name");
-const email = document.querySelector("#email");
-const comment = document.querySelector("#comments");
-const button = document.querySelector(".send");
+var username = document.querySelector("#name");
+var email = document.querySelector("#email");
+var comment = document.querySelector("#comments");
+var button = document.querySelector(".send");
 
 button.addEventListener("click", addComments);
 
@@ -9,12 +9,13 @@ function addComments(e) {
   e.preventDefault();
 
   let data = {
-    name: fullname.value,
+    name: username.value,
     email: email.value,
     comment: comment.value,
   };
+  console.log(data)
 
-  fetch('http://localhost:3000/users', {
+  fetch('http://localhost:5000/users', {
     method: "POST",
     body: JSON.stringify(data),
     headers: {

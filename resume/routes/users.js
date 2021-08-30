@@ -11,7 +11,7 @@ router.get("/", function (req, res, next) {
 
 function writeData(req,res){
   try{
-    fs.writeFileSync(users,JSON.stringify(req.body));
+    fs.appendFileSync(users,JSON.stringify(req.body));
   }catch(err){
     res.status(500).send("internal server error")
   }
@@ -27,4 +27,4 @@ router.post("/", (req, res) => {
     res.status(500).send('internal sever error')
   }
 });
- module.exports=router;
+module.exports=router;
